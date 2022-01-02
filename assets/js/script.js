@@ -131,9 +131,12 @@ function callPetFinder() {
   });
 }
 
+// Function to retrieve the dog API information
 function getBreedInfo(currentBreed, dogCardValues){
-  // Needs function to replace spaces in breed name with + symbols
+
   var Url = "https://api.thedogapi.com/v1/breeds/search?q=" + currentBreed
+
+    // Fetches the dog API information
     fetch(Url, {
       headers:{
         "x-api-key": theDogApiKey
@@ -146,6 +149,8 @@ function getBreedInfo(currentBreed, dogCardValues){
       var imageEl = dogCardValues.children[0].src;
       var nameEl = dogCardValues.children[1].textContent;
       var breedEl = dogCardValues.children[2].textContent;
+
+      // Inputs the api information onto the html
       if(currentBreed == "Mixed Breed") {
         var temperamentEl = 'No temperament information available';
         var lifeSpanEl = 'No life span information available';
