@@ -12,24 +12,20 @@
 
 <body>
   <section class="hero-image">
-    <div>
-      <!-- <div class="hero-text"></div> -->
-      <!-- <link href="./assets/images/groupPuppies.jpeg" alt="placeholder" /> -->
-      <div class="hero-text">
-        <h1>My New Best Friend</h1>
-        <p>
-          A simple app to fetch your new best friend
-          <br>Search available breeds by location
-          <br>Click friend's image for more info on breed
-        </p>
-      </div>
-    </div>
+    <article class="hero-text">
+      <h1>My New Best Friend</h1>
+      <p>
+        A simple app to fetch your new best friend
+        <br>Search available breeds by location
+        <br>Click friend's image for more info on breed
+      </p>
+    </article>
   </section>
   <br />
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-2">
-        <div class="row searchEl">
+  <main class="container">
+    <section class="row">
+      <aside class="col-sm-2">
+        <section class="row searchEl">
           <h2>Dog search:</h2>
           <input type="text" id="zip" size="9" placeholder="Zip Code" />
           <select id="distance" name="distance">
@@ -40,15 +36,15 @@
             <option value="any">Any</option>
           </select>
           <button onclick="callPetFinder()">“Retrieve” friend</button>
-        </div>
-        <div class="row">
+        </section>
+        <section class="row">
           <h3>Saved Dogs</h3>
           <br />
-          <div id="savedDogs"></div>
-        </div>
-      </div>
-      <div class="col-sm-10">
-        <div class="row savedToStorage dogAPIinfo hidden" id="selectedDogInfo">
+          <section id="savedDogs"></section>
+        </section>
+      </aside>
+      <section class="col-sm-10">
+        <article class="row savedToStorage dogAPIinfo hidden" id="selectedDogInfo">
           <table id="aboutDog">
             <tr>
               <td>
@@ -72,8 +68,8 @@
               </td>
             </tr>
           </table>
-        </div>
-        <div class="row" id="dogListing">
+        </article>
+        <article class="row" id="dogListing">
           <!-- <div class="card dogCard">
             <img src="./assets/images/dogImagePlaceholder.jpg" class="section media dogImage">
             <h3 class="section double-padded dogName">Dog Name</h3>
@@ -107,15 +103,15 @@
             <h3 class="section double-padded">Lorem ipsum</h3>
             <p class="section double-padded">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div> -->
-        </div>
-      </div>
-    </div>
-    <footer>
-      <div class="col-sm col-lg-10 col-lg-offset-1">
-        <p>Copyright &copy; My New Best Friend 2021 | Built using blood, sweat, and <a href="https://chalarangelo.github.io/mini.css/">mini.css</a></p>
-      </div>
-    </footer>
-    <script src="assets/js/script.js"></script>
+        </article>
+      </section>
+    </section>
+  </main>
+  <footer class="col-sm col-lg-10 col-lg-offset-1">
+    <p>Copyright &copy; My New Best Friend 2021 | Built using blood, sweat, and <a
+        href="https://chalarangelo.github.io/mini.css/">mini.css</a></p>
+  </footer>
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>
