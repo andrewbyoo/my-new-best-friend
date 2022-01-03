@@ -12,7 +12,7 @@ So that I can make a more educated decision when adopting a dog.
 ```
 
 ## Deployed Link
-https://andrewyoo93.github.io/my-new-best-friend/
+https://andrewbyoo.github.io/my-new-best-friend/
 
 ## Deployed web visual
 Visual shows what occurs when a search is made, when a dog is selected, when a dog is saved, and when a saved dog is selected.
